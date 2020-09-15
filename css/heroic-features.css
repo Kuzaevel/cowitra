@@ -43,3 +43,20 @@ body {
   padding-right: 93px;
   margin-top: 30px;
 }
+
+.advantages {
+  color: #070707;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38.26px;
+  letter-spacing: 0.22px;
+  padding: 15px 0;
+}
+
+.underline{
+  height: 3.4px;
+  width: 88px;
+  background-image: linear-gradient(to right, #46abf0 0%, #6cd9fa 100%);
+  margin: auto;
+}
