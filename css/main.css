@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Corbel';
+  src: local('Corbel Bold'), local('Corbel-Bold'), url('fonts/Corbel/Corbel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corbel';
+  src: local('Corbel Italic'), local('Corbel-Italic'), url('fonts/Corbel/Corbel-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Corbel';
+  src: local('Corbel Bold Italic'), local('Corbel-BoldItalic'),url('fonts/Corbel/Corbel-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Corbel';
+  src: local('Corbel'), url('fonts/Corbel/Corbel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding-top: 56px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-item .nav-link {
+  height: 14px;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15.45px;
+  letter-spacing: 0.28px;
+}
+
+.nav-item.active .nav-link {
+  color: #207de6;
+  text-decoration: underline;
+}
+
+.truck {
+  height: 512px;
+  /*background-image: url(../img/truck_l.jpg);*/
+  background-color:  grey;
+}
+
+.truck-text {
+  padding-top: 182px;
+  padding-right: 93px;
+  text-shadow: 0 0 3px rgba(49, 48, 48, 0.75);
+  color: #ffffff;
+  font-family: Corbel;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 43.03px;
+  letter-spacing: 0.24px;
+}
+
+.button-in-block {
+  padding-right: 93px;
+  margin-top: 30px;
+}
+
+.advantages {
+  color: #070707;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38.26px;
+  letter-spacing: 0.22px;
+  padding: 15px 0;
+}
+
+.underline{
+  height: 3.4px;
+  width: 88px;
+  background-image: linear-gradient(to right, #46abf0 0%, #6cd9fa 100%);
+  margin: auto;
+}
+
+.card-title {
+  color: #207de6;
+  font-family: Corbel;
+  font-size: 16.7px;
+  font-weight: 700;
+  line-height: 16.7px;
+  letter-spacing: 0.29px;
+  text-transform: uppercase;
+  padding: 20px 0 15px 40px;
+}
+
+.card-body ul {
+  padding-left: 15px;
+}
+
+.card-body li{
+  list-style: none;
+  background: url(../img/arrow_1.png) no-repeat 3px 4px;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #58585a;
+  font-family: "Roboto Light";
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.card-body li b {
+  font-family: "Roboto Medium";
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.card-about {
+  height: 678px;
+  /*background-image: url(../img/foto_about.jpg);*/
+  background-image: url(http://placehold.it/1110x678);
+}
+
+p.card-text{
+  text-indent: 30px;
+  color: #34363a;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+p.card-text span.bl {
+  color: #46abf0;
+  font-family: "Roboto Medium";
+  font-weight: 500;
+}
+
+.landing-col {
+  background: url('http://placehold.it/278') no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 300px;
+  margin:0;
+  padding:0px;
+}
