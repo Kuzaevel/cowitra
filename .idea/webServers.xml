@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9abb8493-4d34-4330-b666-7f75bf781f3c" name="ftp77.hostland.ru" url="http://ftp77.hostland.ru">
+        <fileTransfer rootFolder="/cowitra.ru/htdocs/www" host="ftp77.hostland.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
