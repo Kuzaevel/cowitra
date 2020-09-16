@@ -20,7 +20,7 @@ body {
 
 .truck {
   height: 512px;
-  /*background-image: url(../img/truck_l.jpg);*/
+  background-image: url(../img/truck_l.jpg);
   background-color:  grey;
 }
 
@@ -91,8 +91,8 @@ body {
 
 .card-about {
   height: 678px;
-  /*background-image: url(../img/foto_about.jpg);*/
-  background-image: url(http://placehold.it/1110x678);
+  background-image: url(../img/foto_about.jpg);
+  /*background-image: url(http://placehold.it/1110x678);*/
 }
 
 p.card-text{
@@ -109,13 +109,70 @@ p.card-text span.bl {
   font-weight: 500;
 }
 
+.partner-logo{
+  height: 167px;
+  display: inline-block;
+  position: relative;
+}
+
+.partner-logo img{
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .landing-col {
-  background: url('http://placehold.it/278') no-repeat;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  height: 300px;
-  margin:0;
-  padding:0px;
+  /*-webkit-background-size: 100% auto;*/
+  /*-moz-background-size: 100% auto;*/
+  /*-o-background-size: 100% auto;*/
+  /*background-size: 100% auto;*/
+  background-size: cover;
+  height: 340px;
+}
+
+.col-news-1 {
+  background-image: url("../img/news_1.png");
+}
+
+.col-news-2 {
+  background-image: url("../img/news_2.png");
+}
+
+.col-news-3 {
+  background-image: url("../img/news_3.png");
+}
+
+.substrate {
+  height: 80px;
+  width: 100%;
+  background-image: linear-gradient(to right, grey,grey);
+  margin: auto;
+}
+
+.p-news {
+  padding-left: 12px;
+  padding-top: 260px;
+  color: #070707;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+}
+
+.a-news{
+  padding-left: 12px;
+  color: #207de6;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.24px;
 }
