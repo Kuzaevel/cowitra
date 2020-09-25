@@ -176,3 +176,85 @@ p.card-text span.bl {
   line-height: 15px;
   letter-spacing: 0.24px;
 }
+
+.news-pagination {
+  display: block;
+  margin: 30px auto 60px;
+}
+
+footer {
+  color: #fefeff;
+  font-family: Roboto;
+  min-height: 284px;
+}
+
+footer h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.32px;
+  padding-bottom: 17px;
+}
+
+footer .column {
+  padding-top: 50px;
+  padding-left: 94px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.24px;
+}
+
+footer .first {
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+}
+
+footer .second {
+  margin-bottom: 48px;
+  padding-bottom: 0px;
+}
+
+footer .third {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.32px;
+}
+
+footer .question-form input, footer .question-form textarea {
+  background: transparent;
+  width: 234px;
+  height: 29px;
+  border: 2px solid #ffffff;
+  opacity: 0.6;
+
+  color: #fefeff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+
+  padding-left: 7px;
+  padding-top: 0px;
+}
+
+footer .question-form textarea {
+  resize: none;
+  height: 52px;
+  padding-top: 6px;
+}
+
+footer .question-form button {
+  width: 234px;
+  height: 29px;
+  background-color: rgba(32, 125, 230, 0.2);
+  border: 2px solid #207de6;
+  color: #fefeff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.22px;
+}
