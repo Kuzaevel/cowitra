@@ -24,13 +24,16 @@ body {
 }
 
 .truck {
-  height: 512px;
+  /*height: 512px;*/
   background-image: url(../img/truck_l.jpg);
   background-color:  grey;
+  background-size: cover;
+  background-position: center center;
 }
 
 .truck-text {
-  padding-top: 182px;
+  /*padding-top: 182px;*/
+  padding-top: 100px;
   padding-right: 93px;
   text-shadow: 0 0 3px rgba(49, 48, 48, 0.75);
   color: #ffffff;
@@ -43,7 +46,32 @@ body {
 
 .button-in-block {
   padding-right: 93px;
-  margin-top: 30px;
+  padding-bottom: 182px;
+}
+
+.button-in-block button, .button-in-block button:hover, .button-in-block button:active, .button-in-block button:focus {
+  width: 120px;
+  background-color: rgba(32, 125, 230, 0.2);
+  border: 2px solid #207de6;
+  color: #207de6;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.28px;
+  cursor: pointer;
+}
+
+@media (max-width:575px){
+  .truck-text, .button-in-block {
+    padding-right: 0px;
+  }
+  .button-in-block {
+    padding-bottom: 82px;
+  }
+  .button-in-block button {
+    color: #ffffff;
+  }
+
 }
 
 .advantages {
