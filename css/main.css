@@ -49,16 +49,39 @@ body {
   padding-bottom: 182px;
 }
 
-.button-in-block button, .button-in-block button:hover, .button-in-block button:active, .button-in-block button:focus {
-  width: 120px;
-  background-color: rgba(32, 125, 230, 0.2);
-  border: 2px solid #207de6;
-  color: #207de6;
+.button-in-block button{
+  width: 121px;
+  height: 40px;
+  border: 2px solid #6cd9fa;
+  background-color: rgba(108, 217, 250, 0.2);
+  color: #6cd9fa;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 0.28px;
   cursor: pointer;
+  outline: none;
+}
+
+.button-in-block button:hover {
+  background-color: rgba(32, 125, 230, 0.7);
+  border: 2px solid #207de6;
+  color: #ffffff;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 ;
+}
+
+button:focus {
+  outline: 0!important;
+  outline-color: transparent!important;
+  outline-width: 0!important;
+  outline-style: none!important;
+  box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
 @media (max-width:575px){
@@ -69,7 +92,7 @@ body {
     padding-bottom: 82px;
   }
   .button-in-block button {
-    color: #ffffff;
+    /*color: #ffffff;*/
   }
 
 }
