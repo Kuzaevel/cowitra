@@ -97,13 +97,34 @@ button:focus {
 
 }
 
-.advantages {
+.block-title {
   color: #070707;
   font-size: 28px;
   font-weight: 600;
   line-height: 38.26px;
   letter-spacing: 0.22px;
   padding: 15px 0;
+}
+
+#advantages, #about, #partners, #news {
+  padding-top: 15px;
+  margin-top: -15px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+@media (min-width:1200px) {
+  #advantages, #about, #partners, #news {
+    padding-top: 120px;
+    margin-top: -120px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
+
+  #advantages {
+    padding-top: 110px;
+    margin-top: -110px;
+  }
 }
 
 .underline{
