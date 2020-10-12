@@ -106,7 +106,7 @@ button:focus {
   padding: 15px 0;
 }
 
-#advantages, #about, #partners, #news {
+/*#advantages, #about, #partners, #news {
   padding-top: 15px;
   margin-top: -15px;
   -webkit-background-clip: content-box;
@@ -125,7 +125,7 @@ button:focus {
     padding-top: 110px;
     margin-top: -110px;
   }
-}
+}*/
 
 .underline{
   height: 3.4px;
