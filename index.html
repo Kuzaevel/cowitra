@@ -58,7 +58,7 @@
     <header class="truck my-4">
       <p class="truck-text text-center text-sm-right">АВТОМАТИЗАЦИЯ<br>ТРАНСПОРТНЫХ ПЕРЕВОЗОК
         <div class="button-in-block text-center text-sm-right">
-          <button> Войти </button>
+          <button data-toggle="modal" data-target="#openLoginModal"> Войти </button>
         </div>
       </p>
 
@@ -282,6 +282,30 @@
 
   </div>
   <!-- /.container -->
+
+<div class="modal fade login" id="openLoginModal" tabindex="-1" role="dialog" aria-labelledby="openLoginModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="openLoginModalTitle">Вход в личный кабинет</h5>
+      </div>
+      <div class="modal-body">
+
+        <form class="login-form">
+          <input class="d-block" type="text" placeholder="E-mail или телефон">
+          <input class="d-block" type="text" placeholder="Пароль">
+          <button class="d-block" type="button">Войти</button>
+        </form>
+
+        <div class="links">
+          <div class="registration">Регистрация</div>
+          <div class="forgot-password">Забыли пароль?</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-dark">
