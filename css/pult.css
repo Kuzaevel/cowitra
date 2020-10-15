@@ -1,0 +1,109 @@
+.header-top {
+    color: #353c5e;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 15px;
+    font-style: normal;
+    letter-spacing: 0.38px;
+}
+
+.header-bread {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 15px;
+    letter-spacing: 0.26px;
+}
+
+.inner-container {
+    background-color: #ebf1fb;
+    border-radius: 7px;
+    width: 100%;
+    position: relative;
+    color: #303744;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0.52px;
+}
+
+.inner-container.active {
+    background-color: #207de6;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.52px;
+}
+
+.inner-container:after {
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+.inner-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.inner-content .text-header {
+    color: #207de6;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+}
+
+.inner-content p {
+    white-space: nowrap;
+    margin-bottom: 0.4rem;
+}
+
+.inner-container-first {
+    height: calc(50% - 0.75rem);
+    margin-bottom: 1.5rem;
+    background-color: #ebf1fb;
+    border-radius: 7px;
+    position: relative;
+}
+
+.inner-container-second {
+    height: calc(50% - 0.75rem);
+    background-color: #ebf1fb;
+    border-radius: 7px;
+    position: relative;
+}
+
+/*.inner-container-short {*/
+/*    background-color: #fe0;*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*}*/
+
+/*.inner-container-short:after {*/
+/*    content: "";*/
+/*    padding-top: 100%;*/
+/*    display: block;*/
+/*}*/
+
+/*.inner-content-short {*/
+/*    position: absolute;*/
+/*    transform: translate(-50%, -50%);*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*}*/

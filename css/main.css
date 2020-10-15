@@ -358,7 +358,7 @@ footer .question-form button {
   color: #fdfbfb;
   border-radius: 0px;
   max-width: 402px;
-  max-height: 368px;
+  /*max-height: 368px;*/
   padding-left: 24px;
   padding-right: 24px;
 }
