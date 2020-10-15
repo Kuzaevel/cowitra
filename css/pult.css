@@ -1,3 +1,11 @@
+.nav-item {
+    padding-right: 25px;
+}
+.nav-link {
+    display: inline;
+    padding-left: 2px !important;
+}
+
 .header-top {
     color: #353c5e;
     font-family: Roboto;
@@ -35,13 +43,6 @@
 .inner-container.active {
     background-color: #207de6;
     color: #ffffff;
-    font-family: Roboto;
-    font-size: 26px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.52px;
 }
 
 .inner-container:after {
@@ -58,7 +59,7 @@
     text-align: center;
 }
 
-.inner-content .text-header {
+.text-header {
     color: #207de6;
     font-family: Roboto;
     font-size: 22px;
@@ -89,21 +90,56 @@
     position: relative;
 }
 
-/*.inner-container-short {*/
-/*    background-color: #fe0;*/
-/*    width: 100%;*/
-/*    position: relative;*/
-/*}*/
+@media (max-width:768px){
 
-/*.inner-container-short:after {*/
-/*    content: "";*/
-/*    padding-top: 100%;*/
-/*    display: block;*/
-/*}*/
+    .nav-item {
+        margin-bottom: 10px;
+    }
 
-/*.inner-content-short {*/
-/*    position: absolute;*/
-/*    transform: translate(-50%, -50%);*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*}*/
+    .nav-link {
+        padding-left: 10px !important;
+    }
+
+    .inner-container {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .inner-content p {
+        white-space: normal;
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .text-header {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .inner-container img, .inner-container-first img{
+        width: 30px;
+    }
+
+    .inner-container-first {
+        height: calc(50% - 2px);
+        margin-bottom: 5px
+    }
+
+    .short-div p{
+        margin-bottom: 1px
+    }
+
+    .inner-container-second {
+        height: calc(50% - 2px);
+    }
+
+    .inner-container-second img {
+        width: 15px;
+    }
+
+    .padding-1 {padding-right: 7px;}
+    .padding-2 {padding-left: 7px;}
+    .padding-3 {padding-right: 5px;}
+    .padding-4 {padding-left: 5px; padding-right: 5px;}
+    .padding-5 {padding-left: 5px;}
+}
