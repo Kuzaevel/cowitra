@@ -1,57 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    require_once("header.php");
+?>
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Cowitra - логистика">
-  <meta name="author" content="Cowitra-логистика">
-
-  <title>Cowitra</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="css/fonts.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-
-  <link rel="icon" href="img/favicon_cow.png" type="image/x-icon"/>
-
-</head>
-
-<body>
-
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-  <div class="container p-sm-3">
-    <a class="navbar-brand" href="/"><img src="img/logo.png" alt="cowitra"></a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarResponsive" style="">
-      <ul class="navbar-nav ml-auto mt-3 mt-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#advantages">Наши преимущества</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#partners">Наши партнеры</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#news">Новости</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacts">Связаться</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  <!-- Page Content -->
+<!-- Page Content -->
   <div class="container">
 
     <!-- Jumbotron Header -->
@@ -291,15 +242,17 @@
       </div>
       <div class="modal-body">
 
-        <form class="login-form" action="pult.html" method="get">
-          <input class="d-block" type="text" placeholder="E-mail или телефон">
-          <input class="d-block" type="text" placeholder="Пароль">
+        <form class="login-form validate" action="auth.php" method="post">
+          <input class="d-block" name="email" type="text" placeholder="E-mail">
+          <input class="d-block" name="password" type="password" placeholder="Пароль">
           <button class="d-block" type="submit" >Войти</button>
         </form>
 
         <div class="links">
-          <div class="registration">Регистрация</div>
-          <div class="forgot-password">Забыли пароль?</div>
+<!--          <button data-toggle="modal" data-target="#openLoginModal"> Войти </button>-->
+<!--          <div class="registration">Регистрация</div>-->
+          <a href="form_register.php" class="registration">Регистрация</a>
+          <a href="form_restore.php" class="forgot-password">Забыли пароль?</a>
         </div>
 
       </div>
@@ -307,75 +260,25 @@
   </div>
 </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark">
-    <div class="container">
-      <div class="row">
-          <div class="col-md-4 pl-5 pt-4 pt-sm-5 pl-md-1 column">
-            <h5>
-              Контакты
-            </h5>
-            <p class="first">
-              +7 (900) 000-00-00
-            </p>
-            <p class="second">
-              e-mai: cowitra@mail.ru
-            </p>
-            <p class="third">
-              <u>Отзывы</u>
-            </p>
-          </div>
+<?php
+    require_once("footer.php");
+?>
 
-          <div class="col-md-4 pl-5 pt-3 pl-md-1 pt-md-5 column">
-            <h5>
-              <div id="contacts">
-              Возникли вопросы?
-              </div>
-            </h5>
-            <form class="question-form">
-              <input class="d-block" type="text" placeholder="Ваше Имя">
-              <input class="d-block" type="text" placeholder="E-mail">
-              <textarea class="d-block" rows="4" placeholder = "Сообщение"></textarea>
-              <button class="d-block" type="button">Отправить сообщение</button>
-            </form>
-          </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="js/index.js"></script>
 
-          <div class="col-md-4 pl-5 pt-4 pl-md-5 pt-md-5 column">
-            <h5>
-              Документы
-            </h5>
-            <p class="first">
-              <u>Условия оказания услуг</u>
-            </p>
-            <p class="second">
-              <u>Шаблоны и бланки документов</u>
-            </p>
-            <p class="third">
-              Мобильные приложения:
-            <p>
-              <img src="img/mobile_icons.png">
-            </p>
-            </p>
-          </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </footer>
+<?php
+    if($_GET['login'] == 1) {
+?>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#openLoginModal').modal('show');
+        window.history.pushState({}, "Hide", "http://cowitra");
+    });
+</script>
+<?php
+    }
+?>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $('.nav-item').click(function (){
-      if(!$(this).hasClass('active')) {
-        $('.nav-item').each(function () {
-          $(this).removeClass('active');
-        });
-        $(this).addClass('active');
-      }
-    })
-  </script>
-  <script src="js/script.js"></script>
 </body>
-
 </html>

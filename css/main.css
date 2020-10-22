@@ -383,9 +383,13 @@ footer .question-form button {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0.2px;
-  margin-bottom: 22px;
+  /*margin-bottom: 22px;*/
   padding-left: 7px;
   padding-top: 0px;
+}
+
+.login-form input[name="password"] {
+  margin-top: 22px;
 }
 
 .login-form button {
@@ -399,18 +403,27 @@ footer .question-form button {
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0.22px;
+  margin-top: 22px;
 }
 
 .login .links {
   padding-top: 25px;
 }
 
-.registration {
+.registration, .registration:hover {
   float: left;
   text-decoration: underline;
+  cursor: pointer;
+  color: white;
 }
 
-.forgot-password {
+.forgot-password, .forgot-password:hover{
   float: right;
   text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.error {
+  color: red;
 }
